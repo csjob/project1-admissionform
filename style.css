@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(136deg, rgb(224, 195, 252) 0%, rgb(142, 197, 252) 100%);
+    background-image: -webkit-linear-gradient(136deg, rgb(224, 195, 252) 0%, rgb(142, 197, 252) 100%);
+    background-image: -ms-linear-gradient(136deg, rgb(224, 195, 252) 0%, rgb(142, 197, 252) 100%);
+}
+
+.main-box {
+    background: #fff;
+    border-radius: 15px;
+    margin: auto;
+
+}
+
+h4{
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(115, 124, 255);
+    margin: 0 2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+       
+} 
+/****radio-button****/
+.radio_wrap{
+    display: block;
+  position: relative;
+  padding-left: 62px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio_wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* Create a custom radio button */
+.radio-mark {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 22px;
+    width: 22px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+   
+}
+
+/* On mouse-over, add a grey background color */
+.radio_wrap:hover input ~ .radio-mark {
+    background-color: #a5e6fa;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio_wrap input:checked ~ .radio-mark {
+    background-color: #d596ee;  
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the indicator (dot/circle) when checked */
+.radio_wrap input:checked ~ .radio-mark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio_wrap .radio-mark:after {
+    top: 7px;
+   left: 7px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+/****radio-button****/
+
+
+/* User-details */
+
+.user-details{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: -14px 0.5rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    justify-content: space-between;
+}
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+
+.input-box span.details{
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 2rem;
+}
+
+.input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box-radio span.details-radio{
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 1.5rem;
+}
+
+.input-box-radio input{
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+
+
+/* User-details */
+
+
+
+/* submit button */
+.submit-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.submit-click-btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 150px;
+    height: 62px;
+    background-color: #597b9b;
+    border-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    /* z-index: 1; */
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.submit-click-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(134, 182, 236, 0.3);
+}
+
+
+/* submit button */
+
